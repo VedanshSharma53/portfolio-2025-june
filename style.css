@@ -1830,10 +1830,13 @@ body {
     gap: var(--space-xl);
     justify-content: center;
 }
+/* Achievements & Certifications Section - Match Project Cards */
 .achievement-card {
-    background: var(--bg-card);
-    box-shadow: 0 8px 32px 0 var(--shadow-colored);
+    background: #fff;
+    color: var(--text-primary);
     border-radius: var(--radius-xl);
+    box-shadow: 0 4px 24px 0 var(--shadow-colored);
+    border: 1.5px solid var(--border);
     padding: var(--space-xl) var(--space-lg);
     min-width: 320px;
     max-width: 400px;
@@ -1841,7 +1844,6 @@ body {
     align-items: flex-start;
     gap: var(--space-lg);
     transition: var(--transition);
-    border: 1.5px solid var(--border);
     position: relative;
     overflow: hidden;
 }
@@ -1851,34 +1853,48 @@ body {
     border-color: var(--primary);
 }
 .achievement-icon {
-    font-size: 2.5rem;
-    color: var(--secondary);
-    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 2px 8px 0 var(--shadow-colored);
     margin-top: 0.25rem;
-    filter: drop-shadow(0 2px 8px var(--accent-light));
 }
 .achievement-content {
     flex: 1;
 }
 .achievement-title {
-    font-size: 1.1rem;
-    font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: var(--space-xs);
-    line-height: 1.3;
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: 0.01em;
 }
 .achievement-date {
-    font-size: 0.95rem;
-    font-weight: 500;
     color: var(--primary);
+    font-weight: 700;
+    font-size: 1.05rem;
     margin-left: 0.5rem;
 }
 .achievement-details {
-    margin: 0 0 0.25rem 1.1rem;
-    padding: 0;
     color: var(--text-secondary);
-    font-size: 1rem;
-    list-style: disc inside;
+    font-size: 1.02rem;
+    font-weight: 400;
+}
+.achievement-badge {
+    display: inline-block;
+    background: #ffb300;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 0.7em;
+    padding: 0.2em 0.9em;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.03em;
 }
 .gradient-text {
     background: linear-gradient(90deg, var(--primary), var(--secondary));
@@ -1969,4 +1985,31 @@ body {
         background: rgba(30, 41, 59, 0.97) !important;
         box-shadow: 0 2px 12px 0 var(--shadow-colored);
     }
+} 
+
+/* Achievements & Certifications Section - Improved Contrast */
+.achievement-card {
+    color: #fff;
+}
+.achievement-title {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.15rem;
+    letter-spacing: 0.01em;
+}
+.achievement-date {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-left: 0.5rem;
+}
+.achievement-details {
+    color: #e5e7eb;
+    font-size: 1.02rem;
+    font-weight: 400;
+}
+.achievement-icon {
+    filter: drop-shadow(0 2px 8px var(--primary));
+    color: var(--secondary);
+    opacity: 0.95;
 } 
