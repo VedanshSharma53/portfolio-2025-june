@@ -1956,3 +1956,17 @@ body {
         border-radius: var(--radius-md);
     }
 } 
+
+/* Fix mobile hamburger menu overlay background for better readability */
+.nav-links.active {
+    background: rgba(30, 41, 59, 0.97) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+@media (max-width: 900px) {
+    .nav-links.active {
+        background: rgba(30, 41, 59, 0.97) !important;
+        box-shadow: 0 2px 12px 0 var(--shadow-colored);
+    }
+} 
