@@ -1997,3 +1997,43 @@ body {
     color: var(--secondary);
     opacity: 0.95;
 } 
+
+/* Mobile theme toggle fixes */
+@media (max-width: 768px) {
+    [data-theme="light"] .nav-links.active {
+        background: rgba(255, 255, 255, 0.97) !important;
+        color: var(--text-primary);
+    }
+    
+    [data-theme="light"] .nav-link {
+        color: var(--text-primary);
+    }
+    
+    [data-theme="light"] .nav-link:hover,
+    [data-theme="light"] .nav-link.active {
+        color: white;
+    }
+    
+    [data-theme="light"] .mobile-toggle span {
+        background-color: var(--text-primary);
+    }
+    
+    [data-theme="light"] .hero {
+        background: var(--bg-primary);
+    }
+    
+    [data-theme="light"] .profile-card {
+        background: var(--bg-card);
+        color: var(--text-primary);
+    }
+    
+    [data-theme="light"] .project-card {
+        background: #fff;
+        color: var(--text-primary);
+    }
+    
+    [data-theme="light"] .achievement-card {
+        background: #fff;
+        color: var(--text-primary);
+    }
+} 
