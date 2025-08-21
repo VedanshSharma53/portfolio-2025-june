@@ -490,8 +490,8 @@ document.addEventListener('DOMContentLoaded', () => {
     • Mobile-friendly navigation
     • Easter eggs (try the Konami code!)
     
-    📧 Contact: vedansh.sharma@gmail.com
-    🔗 GitHub: github.com/vedansh-sharma
+    📧 Contact: svedansh0302@gmail.com
+    🔗 GitHub: github.com/vedanshsharma53
     
     Built with modern web technologies and lots of ❤️
     `);
