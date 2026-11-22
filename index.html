@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vedansh Sharma — Full-Stack Developer</title>
   <meta name="description" content="Vedansh Sharma — FDSE intern at HMWSSB and B.Tech CSE student at MLRIT, Hyderabad. React, FastAPI, PostgreSQL, Docker, AWS.">
-  <meta name="theme-color" content="#f3f1eb" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#0f0f0e">
   <meta property="og:title" content="Vedansh Sharma — Full-Stack Developer">
   <meta property="og:description" content="FDSE intern at HMWSSB and B.Tech CSE student at MLRIT, Hyderabad.">
   <meta property="og:url" content="https://vedanshsharma.me">
@@ -19,10 +18,9 @@
   <script>
     (function () {
       document.documentElement.className += ' js';
-      try {
-        var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
+      var t = 'dark';
+      try { if (localStorage.getItem('theme') === 'light') t = 'light'; } catch (e) {}
+      document.documentElement.setAttribute('data-theme', t);
     })();
   </script>
 </head>
