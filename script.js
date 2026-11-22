@@ -126,7 +126,7 @@
     btn.addEventListener('click', function () {
       var text = btn.getAttribute('data-copy');
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function () { showToast('Email copied'); }, function () { showToast(text); });
+        navigator.clipboard.writeText(text).then(function () { showToast(btn.getAttribute('data-label') || 'Copied'); }, function () { showToast(text); });
       } else {
         showToast(text);
       }
